@@ -1,0 +1,133 @@
+<div role="tabpanel" class="tab-pane" id="three3d_tab">
+  <div id="" class="spinner"></div>
+  <div id="three3d" class="row dynamic-content">
+    <p class="text-center" style="font-size:2em">
+      <strong>
+        <span class="three3d-purpose"></span>
+      </strong>
+      <span id="three3d-current-period"></span>
+      <span
+        class="glyphicon glyphicon-info-sign"
+        data-toggle="tooltip"
+        data-placement="bottom"
+        title=""
+      ></span>
+    </p>
+
+    <div id="three3d-map" class="three-d-map col-xs-12"></div>
+    <div class="three-d-map-controls container-fluid form-inline">
+      <div id="three3d-period-id">
+        <label id="three3d-period-label">Data Selection</label>
+        <select class="form-control" id="three3d-period"></select>
+      </div>
+
+      <fieldset>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="three3d-controls" />Controls
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="three3d-centroids" />Centroids
+        </label>
+      </fieldset>
+
+      <div class="control">
+        <!-- symbols defined at: https://graphemica.com/ -->
+        <button class="move left" title="move left">&larr;</button>
+        <button class="move right" title="move right">&rarr;</button>
+        <button class="move back" title="move back">&uarr;</button>
+        <button class="move forward" title="move forward">&darr;</button>
+        <!-- north east arrow ? https://graphemica.com/%E2%86%97 -->
+        <button class="tilt up" title="tilt up">&#8599;</button>
+        <button class="tilt down" title="tilt down">&#8601;</button>
+        <button class="rotate left" title="rotate left">&#8635;</button>
+        <button class="rotate right" title="rotate right">&#8634;</button>
+        <button class="zoom in" title="zoom in">&#9547;</button>
+        <button class="zoom out" title="zoom out">&#9473;</button>
+      </div>
+
+      <fieldset>
+        <label id="three3d-classification-label">Classification</label>
+        <select class="form-control" id="three3d-classification">
+          <option value="quartiles" selected="selected">Quartiles</option>
+          <option value="even-interval">Even interval</option>
+        </select>
+      </fieldset>
+
+      <fieldset id="three3d-redraw">
+        <label>
+          Redraw
+        </label>
+        <select
+          id="three3d-cycle-frequency"
+          class="form-control form-control-inline"
+        >
+          <option value="1">every 1 sec</option>
+          <option value="2">every 2 sec</option>
+          <option value="3">every 3 sec</option>
+          <option value="4">every 4 sec</option>
+          <option value="5">every 5 sec</option>
+          <option value="6">every 6 sec</option>
+          <option value="7">every 7 sec</option>
+          <option value="8">every 8 sec</option>
+          <option value="9">every 9 sec</option>
+          <option value="10">every 10 sec</option>
+        </select>
+      </fieldset>
+    </div>
+
+    <label id="three3d-filter-label"></label>
+    <div id="three3d-filter-checkboxes" class="three3d-filter-checkboxes"></div>
+
+    <div class="col-xs-12" style="margin-top:1em;">
+      <div
+        style="margin-bottom:1em;margin-top:1.6em;"
+        id="three3d-slider-time"
+      ></div>
+      <div class="row">
+        <div class="col-xs-6">
+          <button
+            id="three3d-update-map"
+            style="display:none"
+            class="btn three-d-map-control-button"
+          >
+            Update Map
+          </button>
+          <button
+            id="three3d-start-cycle-map"
+            class="btn three-d-map-control-button"
+          >
+            Cycle Through Day
+          </button>
+          <button
+            id="three3d-stop-cycle-map"
+            class="btn three-d-map-control-button"
+            style="display:none"
+          >
+            Stop Cycle
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    id="collapsebtn"
+    class="btn three-d-map-control-button"
+    data-toggle="collapse"
+    data-target=""
+    style="margin-bottom:10px"
+  >
+    Show Data
+  </button>
+  <div class="datatable-div col-sm-12 " id="datatable-div">
+    <div id="datatable-collapse" class="collapse">
+      <table id="datatable-table" style="width:100%">
+        <thead>
+          <tr></tr>
+        </thead>
+      </table>
+      <div id="datatable-columns" class="col-sm-12">
+        <strong>Data Column Notes:</strong>
+      </div>
+    </div>
+  </div>
+</div>

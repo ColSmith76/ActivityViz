@@ -1,78 +1,87 @@
-#timeuse-main {
-	//
-	padding: 0px;
-	padding-left: 0;
-	padding-top: 0;
+.time-use-visualization {
+  display: flex;
+  justify-content: stretch;
 }
 
-#timeuse-sidebar {
-	padding-left: 10px;
-	//display: table;
+.timeuse-main {
+  padding: 0px;
+  padding-left: 0;
+  padding-top: 0;
+  flex: 1 1 70%;
 }
 
-#timeuse-text-area {
-	margin-bottom: 30px;
+.timeuse-sidebar {
+  padding-left: 10px;
 }
 
-#timeuse-legend {
-	//display: table-cell;
-	vertical-align: middle;
-	cursor: default;
+.timeuse-text-area {
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-#timeuse-legend rect {
-	fill: white;
-	stroke:black;
-	stroke-width:2;
-	opacity: 1.0;
+.timeuse-legend {
+  vertical-align: middle;
+  cursor: default;
+}
+.timeuse-legend svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-#timeuse-legend rect.timeuse-current-person-type {
-	opacity: 1.0;
-	fill: yellow;
+.timeuse-legend rect {
+  fill: white;
+  stroke: black;
+  stroke-width: 2;
+  opacity: 1;
 }
 
-#timeuse-legend text {
-	font-weight: 400;
-	fill: black;
+.timeuse-legend rect.timeuse-current-person-type {
+  opacity: 1;
+  fill: #e09d15;
 }
 
-#timeuse-chart {
-	position: relative;
-	padding-left: 0;
-	padding-top: 0;
-	height: 600px;
-	width: 100%;
+.timeuse-legend text {
+  font-weight: 400;
+  fill: black;
 }
 
-#timeuse-chart path {
-	stroke: #fff;
+.timeuse-chart {
+  position: relative;
+  padding-left: 0;
+  padding-top: 0;
+  height: 600px;
+  width: 100%;
 }
 
-#timeuse-explanation {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	display: table;
-	color: #666;
-	z-index: -1;
-	padding-left: 0px;
+.timeuse-chart path {
+  stroke: #fff;
 }
 
-#timeuse-explanation p {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
+.timeuse-explanation {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: table;
+  color: #666;
+  z-index: -1;
+  padding-left: 0px;
 }
 
-#timeuse-percentage {
-	font-size: 2.5em;
+.timeuse-explanation p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
-#timeuse-current-node {
-	font-size: 2em;
+.timeuse-percentage {
+  font-size: 2.5em;
 }
 
-#timeuse-current-node-value {
-	font-size: 1.5em;
+.timeuse-current-node {
+  font-size: 2em;
+}
+
+.timeuse-current-node-value {
+  font-size: 1.5em;
 }
