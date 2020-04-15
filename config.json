@@ -1,22 +1,28 @@
 {
   "regions":{
+    "rsginc":{
+      "datalocation":  "https://raw.githubusercontent.com/RSGInc/ActivityViz_data/master/data/rsginc/"
+    },
     "atlanta":{
-      "default":  true
+       "datalocation":  "https://raw.githubusercontent.com/RSGInc/ActivityViz_data/master/data/atlanta/"
     },
     "portland":{
-      "default":  false
+       "datalocation":  "https://raw.githubusercontent.com/RSGInc/ActivityViz_data/master/data/portland/"
     },
     "sandiego":{
-      "default":  false
+       "datalocation":  "https://raw.githubusercontent.com/RSGInc/ActivityViz_data/master/data/sandiego/"
     },
     "sacramento":{
-      "default":  false
+       "datalocation":  "https://raw.githubusercontent.com/RSGInc/ActivityViz_data/master/data/sacramento/"
     },
-	"nebraska":{
-      "default":  false
+    "nebraska":{
+       "datalocation":  "https://raw.githubusercontent.com/RSGInc/ActivityViz_data/master/data/nebraska/"
     },
-	"washingtondc":{
-      "default":  false
+    "charlotte":{
+       "datalocation":  "https://raw.githubusercontent.com/RSGInc/ActivityViz_data/master/data/charlotte/"
+    },
+    "necc":{
+       "datalocation":  "/data/necc/"
     }
   }
 }
