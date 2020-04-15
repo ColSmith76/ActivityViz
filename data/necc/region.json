@@ -9,7 +9,7 @@
   "TabbedCharts":false,
   "CenterMap": [38.9072, -77.0369],
   "FrontPageTitle": "NECC SDP",
-  "FrontPageGraphic": "RSG_400px.png",
+  "FrontPageGraphic": "RSG_400px.jpg",
   "scenarios":{
     "PrefFuture": "- Preferred Alt (Future)"
   },
