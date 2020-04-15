@@ -14,9 +14,6 @@
     },
 	"nebraska":{
       "default":  false
-    },
-	"washingtondc":{
-      "default":  false
     }
   }
 }
