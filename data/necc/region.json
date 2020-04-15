@@ -11,7 +11,7 @@
   "FrontPageTitle": "NECC SDP",
   "FrontPageGraphic": "RSG_400px.png",
   "scenarios":{
-    "NECC SDP": "- Preferred Alt (Future)"
+    "PrefFuture": "- Preferred Alt (Future)"
   },
   "visualizations":{
   "3DMap":false,
