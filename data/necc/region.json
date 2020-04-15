@@ -1,0 +1,48 @@
+{
+  "Title":"NECC SDP",
+  "CountyFile":"ZoneShape.json",
+  "ZoneFile":"ZoneShape.json",
+  "Icon":"RSG.ico",
+  "Logo":"RSG_400px.png",
+  "NavbarTitle":"NECCSDP",
+  "LinkURL":"https://www.rsginc.com",
+  "TabbedCharts":false,
+  "CenterMap": [38.9072, -77.0369],
+  "FrontPageTitle": "NECC SDP",
+  "FrontPageGraphic": "RSG_400px.png",
+  "scenarios":{
+    "NECC SDP": "- Preferred Alt (Future)"
+  },
+  "visualizations":{
+  "3DMap":false,
+  "BarMap":false,
+  "GrpBar":false,
+  "TimeUse":false,
+  "Radar":false,
+  "Sunburst":false,
+  "Chord":true
+},
+  "RadarCharts":{
+    "NumberColsRadar":4,
+    "IndependentScale":[""],
+    "ConvertAxesToPercent":true
+  },
+  "GroupedCharts":{
+    "NumberColsGrouped":1,
+    "SwapLegendByDefault":true,
+    "ShowAsPercentByDefault":true,
+    "ShowAsVerticalByDefault":false,
+    "StackAllChartsByDefault":false,
+    "ChartWidthOverride": []
+  },
+  "ThreeDMap":{
+    "ShowPeriodsAsDropdown":false,
+    "DataHasPeriods":true,
+    "ZoneFile": []
+  },
+  "Chord": {
+    "ZoneFilterFile": "cocs.csv",
+    "LabelSize": "14",
+    "LegendText": "Rail Passenger Demand"
+    }
+}
